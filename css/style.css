@@ -11,9 +11,7 @@ ul,ol{
 p{
      margin:0;
 }
-body{
-	
-}
+
 .mybutton a{
      font-size: 15px;
      color: #fff;
@@ -136,18 +134,7 @@ padding:31px 0;
      visibility:visible;
      height:16px;
 }
-/* #full-wrapper{
-      background:url('../images/big-background.png');
-      background-position: contain;
-      background-size: cover ;
-      background-repeat: no-repeat;
-      padding:125px 0;
-      width:100%;
-      margin-top:130px;
-      position:relative;
-      z-index:-1;
-      
-} */
+
 #full-wrapper {
 	background: url('../images/big-background.png');
 	background-position: top;
@@ -446,6 +433,22 @@ padding:31px 0;
 	width: 242px;
 	background-repeat: no-repeat;
 	z-index: -1;
+	display:none;
+}
+.comm-left-slider-main{
+	position:relative;
+
+}
+.comm-left-slider-main::after{
+	background: url('../images/comments-line-left.png');
+	left: -14%;
+	top: 78px;
+	content: '';
+	position: absolute;
+	height: 263px;
+	width: 242px;
+	background-repeat: no-repeat;
+	z-index: -1;
 }
 .mycommvector{
      margin-top:16px;
@@ -608,4 +611,25 @@ padding:31px 0;
 }
 .adjust {
 	margin-left: 60px;
+}
+.mynav{
+	position:relative;
+}
+.sticky-menu{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120px;
+	background:#fff;
+	z-index:99;
+	animation: stk 1s linear;
+}
+@keyframes stk{
+	from{
+		top:-200px;
+	}
+	to{
+		top:0;
+	}
 }
