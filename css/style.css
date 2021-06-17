@@ -410,7 +410,8 @@ padding:31px 0;
 	padding: 0 135px;
 }
 .comments-bg{
-     background:url('../images/comments-img-background-frame.png');
+     /* background:url('../images/comments-img-background-frame.png'); */
+	background: url('../images/comm-img-for-small-screen.png');
      width:100%;
      height:515px;
      position:relative;
@@ -426,7 +427,7 @@ padding:31px 0;
 }
 .comments-bg::after {
 	background: url('../images/comments-line-right.png');
-	right: 4%;
+	right: 9%;
 	top: 324px;
 	content: '';
 	position: absolute;
@@ -437,8 +438,8 @@ padding:31px 0;
 }
 .comments-bg::before {
 	background: url('../images/comments-line-left.png');
-	left: -14%;
-	top: 43px;
+	left: -11%;
+	top: 73px;
 	content: '';
 	position: absolute;
 	height: 263px;
